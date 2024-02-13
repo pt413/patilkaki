@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>hero</title>
+
+	<link rel="stylesheet" href="./styles.css">
+
+	<link rel="stylesheet" href="https://www.fontshare.com/fonts/general-sans">
+</head>
+<body>
+	<div>
+		<div style="margin-top: -10px; padding-right: 5%; position: fixed ; background-color: white; width: 100%; ">
+			<div class="topbar">
+				<a href="" style="color: seagreen; text-decoration: none;" target="_blank">About</a>
+			</div>
+			<img src="./images/9.png">
+				<a href="" style="color: black;"><h1 style="float: inline-end; padding-right: 10%">Sign-in</h1></a>
+		</div>
+		<div style="width=100%;">
+			<br><br><br><br><br><br>
+		</div>
+		<a href="form.html"><img src="./images/8.png" alt="patilkaki" width="100%" height="600"></a>
+	</div>
+	<h2 style="text-align: center;">
+		Why should you go ahead with me?
+	</h2>
+	<h3 style="text-align: center;">
+		Marketing is a growing section of the society.
+	</h3>
+	<a href=""><img src="./images/3.png" width="100%"></a>
+
+	<div style="background-color: seagreen;">
+		<h1 style="text-align: center;">
+			About Founder
+		</h1>
+		<h2 style="padding-inline: 2%;">Darshil Savla</h2>
+		<br>
+		<center><img src="./images/13.png" height="120" style="border-radius: 50%;"></center>
+		<p style="font-size: x-large; padding-inline: 5%;">Darshil Savla is a Co-founder at PatilKaki. He was one of the judge at SharkTank India S2. Being a Tech Enthusiast and specialist in E-commerce, he is an expert at D2C, Problem Solving, and Brand Building.</p>
+		<br><br>
+		<img src="./images/2.png" width="100%" height="500">
+	</div>
+
+	<div class="count">
+		<p id="countdown">00:10:00</p>
+			<span style="color: red;">
+				HURRY UP!
+				<br>
+				<a href="" style="color: red;">Sign-in</h1></a>
+				</span>
+	</div>
+	<img src="./images/11.png" width="100%">
+	<img src="./images/7.png" width="100%" height="500">
+		
+		<div class="floating-form">
+			<div class="form-header">
+				<button onclick="location.reload();" style="border-radius: 50%; background-color: #ffffff;">x</button>							
+				<center><p>Enter you details here</p></center>
+			</div>
+			<center>
+			<div class="floating-form-card">
+				<form action="" autocomplete="off">	
+					<div class="form-group">
+						<input type="email" class="form-control" placeholder="Email ID">
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Mobile No">
+					</div>
+					<br>
+					<button type="submit" class="btn btn-default center-block">Sign-in</button>
+				</form>
+			</div>
+			</center>
+		</div>
+
+<script>
+
+	const starttime=10;
+	let time=starttime*60;
+	const counts=document.getElementById('countdown');
+
+	setInterval(update,1000);
+
+	function update(){
+		const minutes= Math.floor(time/60);
+		let seconds=time%60;
+		seconds=seconds<10?'0'+seconds:seconds;
+		counts.innerHTML="00:"+`${minutes}:${seconds}`;
+
+		time--;	
+	}
+
+	
+	setTimeout(function() {
+            document.querySelector(".floating-form").style.display = "block"
+        }, 15000)
+
+</script>
+</body>
+</html>

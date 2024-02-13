@@ -1,0 +1,138 @@
+@import url("https://fonts.google.com/specimen/Open+Sans?query=sans");
+
+body{
+	font-family: sans-serif;
+}
+.topbar{
+	background-color: lightgray;
+	text-align: end;
+	padding-right: 10%;
+}
+.secbar{
+	font-size: x-large;
+	text-align: center;
+	padding-inline: 15%;
+
+}
+.count{
+	background-color: gray;
+	font-size: 100px;
+	text-align: center;
+}
+form{
+	/* background-color: rgb(255, 203, 47); */
+	width: 50%;
+	padding-top: 1%;
+	padding-bottom: 3%;
+}
+
+.floating-form {
+    width: 320px;
+    position: fixed;
+    top: 78%;
+    transform: translate(0%, -50%);
+    left: 1%;
+    z-index: 1000;
+    border: 2px solid #ecb247;
+    border-radius: 15px;
+    display: none
+}
+
+.floating-form .form-header {
+    background: #eb702e;
+    padding: 20px 20px 15px;
+    text-align: ;
+    position: relative;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+
+.floating-form .form-header h4 {
+    font-size: 20px;
+    font-weight: 800;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff
+}
+
+.floating-form .form-header p {
+    background: #fff;
+    border-radius: 20px;
+    border: 1px solid #2a518c;
+    display: inline-block;
+    padding: 5px 20px;
+    margin-top: 10px;
+    color: #2a518c;
+    font-weight: 600;
+    position: relative
+}
+
+.floating-form-card {
+    background: #d1effd url('../images/form-floating-bg.png');
+    padding: 20px 30px 20px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: relative;
+    background-position: top center;
+}
+
+.floating-form-card .form-group {
+    margin: 10px 0;
+}
+
+.floating-form-card .form-group .form-control {
+    border-radius: 5px;
+    background: #175191;
+    border: 2px solid #fff;
+    color: #fff;
+    -webkit-box-shadow: -5px 6px 3px -1px rgba(148, 192, 222, 1);
+    -moz-box-shadow: -5px 6px 3px -1px rgba(148, 192, 222, 1);
+    box-shadow: -5px 6px 3px -1px rgba(148, 192, 222, 1);
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 14px
+}
+.floating-form-card .btn-default {
+    color: #fff;
+    background: #175191;
+    border-color: #fff;
+    -webkit-box-shadow: -5px 6px 3px -1px rgba(148, 192, 222, 1);
+    -moz-box-shadow: -5px 6px 3px -1px rgba(148, 192, 222, 1);
+    box-shadow: -5px 6px 3px -1px rgba(148, 192, 222, 1);
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 4px;
+    margin: auto;
+    display: table;
+    cursor: pointer;
+    text-transform: uppercase
+}
+
+@media (max-width:768px) {
+    .floating-form {
+        right: 10px;
+    }
+    .floating-form {
+        width: 270px;
+    }
+    .floating-form .form-header {
+        padding: 15px;
+    }
+    .floating-form .form-header h4 {
+        font-size: 15px;
+    }
+    .floating-form .form-header p {
+        padding: 5px 18px;
+        font-size: 12px;
+    }
+    .floating-form-card {
+        padding: 15px 20px 20px;
+    }
+    .floating-form-card .form-group .form-control {
+        font-size: 12px;
+    }
+    /*********/
+}
